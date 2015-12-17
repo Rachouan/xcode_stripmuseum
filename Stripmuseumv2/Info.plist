@@ -36,5 +36,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Bariol-Bold.otf</string>
+		<string>Bariol_Regular.otf</string>
+	</array>
 </dict>
 </plist>

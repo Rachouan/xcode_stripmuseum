@@ -13,6 +13,12 @@
 		9D2DF08B1C21E9B50057C22E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2DF0891C21E9B40057C22E /* Main.storyboard */; };
 		9D2DF08D1C21E9B50057C22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2DF08C1C21E9B50057C22E /* Assets.xcassets */; };
 		9D2DF0901C21E9B50057C22E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2DF08E1C21E9B50057C22E /* LaunchScreen.storyboard */; };
+		9D2DF0991C21E9E80057C22E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DF0981C21E9E80057C22E /* MainViewController.m */; };
+		9D2DF09C1C21E9F00057C22E /* GallerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DF09B1C21E9F00057C22E /* GallerView.m */; };
+		9D2DF09F1C21EA9B0057C22E /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DF09E1C21EA9B0057C22E /* GalleryViewController.m */; };
+		9D3052831C22BEBC005F83D0 /* Bariol_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D3052811C22BEB3005F83D0 /* Bariol_Regular.otf */; };
+		9D3052841C22BEBC005F83D0 /* Bariol-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D3052821C22BEB3005F83D0 /* Bariol-Bold.otf */; };
+		9DC30F491C2207650072A86B /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC30F481C2207650072A86B /* CardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,19 @@
 		9D2DF08C1C21E9B50057C22E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D2DF08F1C21E9B50057C22E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D2DF0911C21E9B50057C22E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D2DF0971C21E9E80057C22E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9D2DF0981C21E9E80057C22E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9D2DF09A1C21E9F00057C22E /* GallerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GallerView.h; sourceTree = "<group>"; };
+		9D2DF09B1C21E9F00057C22E /* GallerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GallerView.m; sourceTree = "<group>"; };
+		9D2DF09D1C21EA9B0057C22E /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		9D2DF09E1C21EA9B0057C22E /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		9D3052811C22BEB3005F83D0 /* Bariol_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Regular.otf; sourceTree = "<group>"; };
+		9D3052821C22BEB3005F83D0 /* Bariol-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bariol-Bold.otf"; sourceTree = "<group>"; };
+		9DC30F471C2207650072A86B /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		9DC30F481C2207650072A86B /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		9DF9C2EC1C22A545000AE1FA /* Bariol_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Regular.otf; sourceTree = "<group>"; };
+		9DF9C2ED1C22A545000AE1FA /* Bariol-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bariol-Bold.otf"; sourceTree = "<group>"; };
+		9DF9C2F51C22AE5E000AE1FA /* Bariol_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Regular.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +61,7 @@
 		9D2DF0741C21E9B30057C22E = {
 			isa = PBXGroup;
 			children = (
+				9DF9C2EE1C22A55E000AE1FA /* fonts */,
 				9D2DF07F1C21E9B30057C22E /* Stripmuseumv2 */,
 				9D2DF07E1C21E9B30057C22E /* Products */,
 			);
@@ -58,6 +78,10 @@
 		9D2DF07F1C21E9B30057C22E /* Stripmuseumv2 */ = {
 			isa = PBXGroup;
 			children = (
+				9D2DF0971C21E9E80057C22E /* MainViewController.h */,
+				9D2DF0981C21E9E80057C22E /* MainViewController.m */,
+				9D2DF09A1C21E9F00057C22E /* GallerView.h */,
+				9D2DF09B1C21E9F00057C22E /* GallerView.m */,
 				9D2DF0831C21E9B40057C22E /* AppDelegate.h */,
 				9D2DF0841C21E9B40057C22E /* AppDelegate.m */,
 				9D2DF0861C21E9B40057C22E /* ViewController.h */,
@@ -66,7 +90,12 @@
 				9D2DF08C1C21E9B50057C22E /* Assets.xcassets */,
 				9D2DF08E1C21E9B50057C22E /* LaunchScreen.storyboard */,
 				9D2DF0911C21E9B50057C22E /* Info.plist */,
+				9DF9C2F51C22AE5E000AE1FA /* Bariol_Regular.ttf */,
 				9D2DF0801C21E9B40057C22E /* Supporting Files */,
+				9D2DF09D1C21EA9B0057C22E /* GalleryViewController.h */,
+				9D2DF09E1C21EA9B0057C22E /* GalleryViewController.m */,
+				9DC30F471C2207650072A86B /* CardView.h */,
+				9DC30F481C2207650072A86B /* CardView.m */,
 			);
 			path = Stripmuseumv2;
 			sourceTree = "<group>";
@@ -74,9 +103,20 @@
 		9D2DF0801C21E9B40057C22E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9DF9C2EC1C22A545000AE1FA /* Bariol_Regular.otf */,
+				9DF9C2ED1C22A545000AE1FA /* Bariol-Bold.otf */,
 				9D2DF0811C21E9B40057C22E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DF9C2EE1C22A55E000AE1FA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9D3052811C22BEB3005F83D0 /* Bariol_Regular.otf */,
+				9D3052821C22BEB3005F83D0 /* Bariol-Bold.otf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3052831C22BEBC005F83D0 /* Bariol_Regular.otf in Resources */,
+				9D3052841C22BEBC005F83D0 /* Bariol-Bold.otf in Resources */,
 				9D2DF0901C21E9B50057C22E /* LaunchScreen.storyboard in Resources */,
 				9D2DF08D1C21E9B50057C22E /* Assets.xcassets in Resources */,
 				9D2DF08B1C21E9B50057C22E /* Main.storyboard in Resources */,
@@ -152,6 +194,10 @@
 				9D2DF0881C21E9B40057C22E /* ViewController.m in Sources */,
 				9D2DF0851C21E9B40057C22E /* AppDelegate.m in Sources */,
 				9D2DF0821C21E9B40057C22E /* main.m in Sources */,
+				9D2DF09C1C21E9F00057C22E /* GallerView.m in Sources */,
+				9D2DF0991C21E9E80057C22E /* MainViewController.m in Sources */,
+				9D2DF09F1C21EA9B0057C22E /* GalleryViewController.m in Sources */,
+				9DC30F491C2207650072A86B /* CardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +344,7 @@
 				9D2DF0961C21E9B50057C22E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
