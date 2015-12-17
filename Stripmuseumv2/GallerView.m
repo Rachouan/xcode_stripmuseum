@@ -56,22 +56,22 @@
         int xPos = 0;
         for (int i = 1; i<4; i++) {
             
-            /*NSString *imageName = [NSString stringWithFormat:@"%i",i];
+            NSString *imageName = [NSString stringWithFormat:@"%i",i];
             
             UIImage * image = [UIImage imageNamed:imageName];
-            UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
+            /*UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
             
             imageView.frame = CGRectMake(xPos,0,frame.size.width,frame.size.height);*/
             CGSize bounds = CGSizeMake(self.frame.size.width-40, self.frame.size.height-150);
             
             //CardView *card = [[CardView alloc]initWithFrame:CGRectMake(xPos + (self.frame.size.width - bounds.width )/2, 0, bounds.width, bounds.height)];
             
-            CardView *card = [[CardView alloc]initWithButtonType:@"something" andFrame:CGRectMake(xPos + (self.frame.size.width - bounds.width )/2, 0, bounds.width, bounds.height)];
+            CardView *card = [[CardView alloc]initWithTitle:@"herge" andImage:image andSubTitle:@"The Adventures of Tintin" andFrame:CGRectMake(xPos + (self.frame.size.width - bounds.width )/2, 0, bounds.width, bounds.height)];
+            
             
             [self.scrollVW addSubview:card];
             
             xPos += frame.size.width;
-            
             
         }
         

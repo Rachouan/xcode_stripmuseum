@@ -10,6 +10,6 @@
 
 @interface CardView : UIButton
 
-- (id)initWithButtonType:(NSString *)type andFrame:(CGRect)frame; 
+- (id)initWithTitle:(NSString * )titel andImage:(UIImage *)img andSubTitle:(NSString*)subtitle andFrame:(CGRect)frame;
 
 @end

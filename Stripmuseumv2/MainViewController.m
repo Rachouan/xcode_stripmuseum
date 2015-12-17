@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface MainViewController ()
 
@@ -18,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(playGame:)
+                                                 name:@"playGame"
+                                               object:nil];
+
     
 }
 -(void)loadView{
@@ -31,6 +37,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)playGame:(NSNotification *)notification
+{
+    NSLog(@"NOTIFICATION");
+    DetailViewController *detailvc = [[DetailViewController alloc]initWithNibName:nil bundle:nil];
+    [self.parentViewController presentViewController:detailvc animated:YES completion:nil];
+    
 }
 
 /*

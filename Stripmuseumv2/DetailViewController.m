@@ -1,22 +1,29 @@
 //
-//  GalleryViewController.m
+//  DetailViewController.m
 //  Stripmuseumv2
 //
-//  Created by Rachouan Rejeb on 16/12/15.
+//  Created by Rachouan Rejeb on 17/12/15.
 //  Copyright © 2015 Rachouan Rejeb. All rights reserved.
 //
 
-#import "GalleryViewController.h"
+#import "DetailViewController.h"
+#import "DetailView.h"
 
-@interface GalleryViewController ()
+@interface DetailViewController ()
 
 @end
 
-@implementation GalleryViewController
+@implementation DetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+-(void)loadView{
+    CGRect bounds = [UIScreen mainScreen].bounds;
+    
+    
+    self.view = [[DetailView alloc] initWithFrame:bounds];
 }
 
 - (void)didReceiveMemoryWarning {
