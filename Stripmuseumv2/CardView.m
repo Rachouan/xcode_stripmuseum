@@ -17,7 +17,7 @@
     // Drawing code
 }
 */
--(id)initWithFrame:(CGRect)frame{
+- (id)initWithButtonType:(NSString *)type andFrame:(CGRect)frame{
     
     
     self = [super initWithFrame:frame];
@@ -25,6 +25,8 @@
         // Initialization code
         self.backgroundColor = [UIColor colorWithRed:0.184  green:0.251  blue:0.345 alpha:1];
         
+        
+        [self addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
         
         
         UIFont * bariolB = [UIFont fontWithName:@"Bariol-Bold" size:20.0];
@@ -56,6 +58,12 @@
         
     }
     return self;
+}
+
+-(IBAction)buttonPressed:(id)sender{
+    
+    NSLog(@"heey !");
+    
 }
 
 @end

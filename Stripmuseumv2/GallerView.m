@@ -64,7 +64,9 @@
             imageView.frame = CGRectMake(xPos,0,frame.size.width,frame.size.height);*/
             CGSize bounds = CGSizeMake(self.frame.size.width-40, self.frame.size.height-150);
             
-            CardView *card = [[CardView alloc]initWithFrame:CGRectMake(xPos + (self.frame.size.width - bounds.width )/2, 0, bounds.width, bounds.height)];
+            //CardView *card = [[CardView alloc]initWithFrame:CGRectMake(xPos + (self.frame.size.width - bounds.width )/2, 0, bounds.width, bounds.height)];
+            
+            CardView *card = [[CardView alloc]initWithButtonType:@"something" andFrame:CGRectMake(xPos + (self.frame.size.width - bounds.width )/2, 0, bounds.width, bounds.height)];
             
             [self.scrollVW addSubview:card];
             

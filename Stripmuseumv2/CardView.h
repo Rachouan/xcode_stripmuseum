@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CardView : UIView
+@interface CardView : UIButton
 
--(id)initWithFrame:(CGRect)frame;
+- (id)initWithButtonType:(NSString *)type andFrame:(CGRect)frame; 
 
 @end
